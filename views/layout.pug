@@ -26,7 +26,7 @@ html
         $('##{active}').addClass('active');
         function update_stats(){
           $.ajax({url: '/ext/summary', success: function(json){
-            $("#supply").text(json.data[0].supply);
+            $("#supply").text(new Intl.NumberFormat(undefined, {maximumFractionDigits:0}).format(json.data[0].supply));
             $("#masternodeCountOnline").text(json.data[0].masternodeCountOnline).prop("alt", json.data[0].masternodeCountOnline+" nodes online").prop("title", json.data[0].masternodeCountOnline+" nodes online");
             $("#masternodeCountOffline").text(json.data[0].masternodeCountOffline).prop("alt", json.data[0].masternodeCountOffline+" unreachable nodes").prop("title", json.data[0].masternodeCountOffline+" unreachable nodes");
             $("#spnMasternodeCountOnline").prop("alt", json.data[0].masternodeCountOnline+" nodes online").prop("title", json.data[0].masternodeCountOnline+" nodes online");
