@@ -1,5 +1,5 @@
-eIquidus - 1.0.1
-================
+HASH eIquidus - 1.0.1
+=====================
 
 The Exor block explorer.
 
@@ -195,8 +195,8 @@ A pair of scripts to backup or restore the internal mongo database are included.
 
 ### Donate
     
-    EXOR: EYYW8Nvz5aJz33M3JNHXG2FEHWUsntozrd
-    BTC: 15zQAQFB9KR35nPWEJEKvmytUF6fg2zvdP
+    HASH: HDCBEht2KDtquV3SHhH6YKcGUBaiFSeEG2
+    BTC: 1L46vjkahCraj34i5XZYZLpMD6FVEUbnze
 
 ### Known Issues
 
