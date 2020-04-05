@@ -4,9 +4,9 @@ forcesync() {
   blockcount=$1
   echo "╒══════════════════<<"
   echo "| height : $blockcount"
-  blockhash=`curl -s https://explorer.exor.io/api/getblockhash?height=$blockcount`
+  blockhash=`curl -s http://62.171.160.137/api/getblockhash?height=$blockcount`
   echo "| ଓ hash : $blockhash"
-  curl -s https://explorer.exor.io/block/$blockhash > /dev/null
+  curl -s http://62.171.160.137/block/$blockhash > /dev/null
   echo "╘═══════════════════════════════>>"
 }
 

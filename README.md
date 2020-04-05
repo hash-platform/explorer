@@ -1,13 +1,17 @@
-eIquidus - 1.0.1
-================
+HASH eIquidus - 1.1.0
+=====================
 
-The Exor block explorer.
+The HASH block explorer.
 
-This project is a fork of [Ciquidus Explorer](https://github.com/suprnurd/ciquidus) which is a fork of [Iquidus Explorer](https://github.com/iquidus/explorer). Shoutouts to both Luke Williams for the original code and Alan Rudolf for all the additional bonus featues which saved me tons of time! I'm only standing on the shoulders of giants. Thank you both!!!
+This project is a fork of [eIquidus](https://github.com/team-exor/eiquidus) which is a fork of [Ciquidus Explorer](https://github.com/suprnurd/ciquidus) which is a fork of [Iquidus Explorer](https://github.com/iquidus/explorer).
+
+A huge shoutout to [Koen](https://github.com/koen84) for his work to adapt the code for HASH and returning a full explorer to the community. Without his hard work none of this would be possible!!
+
+Special thanks also to the original authors Luke Williams and Alan Rudolf.
 
 ### See it in action
 
--  https://explorer.exor.io/
+-  https://https://explorer.hashplatform.net
 
 ### Requires
 
@@ -27,15 +31,15 @@ Create database:
 
 Create user with read/write access:
 
-    > db.createUser( { user: "eiquidus", pwd: "Nd^p2d77ceBX!L", roles: [ "readWrite" ] } )
+    > db.createUser( { user: "eiquidus", pwd: "ChangeMe!!DB", roles: [ "readWrite" ] } )
 
 ### Get the source
 
-    git clone https://github.com/team-exor/eiquidus explorer
+    git clone https://github.com/hash-platform/explorer hash-explorer
 
 ### Install node modules
 
-    cd explorer && npm install --production
+    cd hash-explorer && npm install --production
 
 ### Configure
 
@@ -191,8 +195,8 @@ A pair of scripts to backup or restore the internal mongo database are included.
 
 ### Donate
     
-    EXOR: EYYW8Nvz5aJz33M3JNHXG2FEHWUsntozrd
-    BTC: 15zQAQFB9KR35nPWEJEKvmytUF6fg2zvdP
+    HASH: HDCBEht2KDtquV3SHhH6YKcGUBaiFSeEG2
+    BTC: 1L46vjkahCraj34i5XZYZLpMD6FVEUbnze
 
 ### Known Issues
 
@@ -216,6 +220,7 @@ Where [SIZE] is an integer higher than the default.
 
 ### License
 
+Copyright (c) 2020, The HASH community
 Copyright (c) 2019, The Exor Community
 Copyright (c) 2017, The Chaincoin Community
 Copyright (c) 2015, Iquidus Technology

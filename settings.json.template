@@ -5,15 +5,15 @@
 */
 {
   // name your instance!
-  "title": "eIquidus",
+  "title": "HASH explorer",
 
-  "address": "127.0.0.1:3001",
+  "address": "62.171.160.137:3001",
 
   // coin name
-  "coin": "Exor",
+  "coin": "Hash",
 
   // coin symbol
-  "symbol": "EXOR",
+  "symbol": "HASH",
 
   // logo
   "logo": "/images/logo.png",
@@ -22,7 +22,7 @@
   "favicon": "public/favicon.ico",
   
   // home link (valid options are: title, coin, logo)
-  "homelink":  "coin",
+  "homelink":  "logo",
   
   // home link logo height (value in px, only valid if using homelink = 'logo')
   "logoheight":  50,
@@ -32,34 +32,34 @@
   //     Cerulean, Cosmo, Cyborg, Darkly, Exor, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Exor",
+  "theme": "Cyborg",
 
   // port to listen for requests on.
   "port" : 3001,
 
-  // database settings (MongoDB)
+  //This setting is passed to MongoDB to set up the database
   "dbsettings": {
     "user": "eiquidus",
-    "password": "Nd^p2d77ceBX!L",
+    "password": "ChangeMe!!DB",
     "database": "explorerdb",
-    "address": "localhost",
-    "port": 27017
+    "address" : "localhost",
+    "port" : 27017
+  },
+
+  //This setting is passed to the wallet
+  "wallet":
+  { "host" : "127.0.0.1",
+    "port" : 4187,
+    "user" : "hashrpc",
+    "pass" : "ChangeMe!!RPC"
   },
 
   //update script settings
   "update_timeout": 10,
   "check_timeout": 250,
 
-  // wallet settings
-  "wallet": {
-    "host": "localhost",
-    "port": 51573,
-    "user": "exorrpc",
-    "pass": "sSTLyCkrD94Y8&9mr^m6W^Mk367Vr!!K"
-  },
-
   // confirmations
-  "confirmations": 40,
+  "confirmations": 15,
 
   // language settings
   "locale": "locale/en.json",
@@ -68,20 +68,20 @@
   // set a number to pnl variables to change the panel display order. lowest # = far left panel, highest # = far right panel, 0 = do not show panel
   "display": {
     "api": true,
-    "markets": true,
-    "richlist": true,
-    "twitter": false,
+    "market": true,
+    "twitter": true,
     "facebook": false,
     "googleplus": false,
     "bitcointalk": false,
-    "website": false,
+    "website": true,
     "slack": false,
-    "github": false,
-    "discord": false,
-    "telegram": false,
+    "github": true,
+    "discord": true,
+    "telegram": true,
     "reddit": false,
     "youtube": false,
     "search": true,
+    "richlist": true,
     "movement": true,
     "network": true,
     "networkpnl": 1,
@@ -98,26 +98,23 @@
     "last_txs": 100
   },
 
-  // ensure links on API page are valid
+  //API view
   "api": {
-    "blockindex": 6415,
-    "blockhash": "dd17105f9e3d79c553b3670001e0243dd21378f4f90a340d87c0e5eb0b44dfd4",
+    "blockindex": 639086,
+    "blockhash": "5a6ffc736074800e246ca29fe5419d77d3f369cf8fa792bf2a8948029f0151a3",
     "txhash": "2af5cc842d18814b45db44b62411c8a47987fc3c56294af38572989de5c1f7d5",
-    "address": "EaqHssmmgEPCxaeczbZnoqM6vutv9xmhrZ"
+    "address": "HDCBEht2KDtquV3SHhH6YKcGUBaiFSeEG2",
   },
 
   // market settings
-  //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex, coinexchange, stex
+  //supported markets: bittrex, poloniex, yobit, bleutrade, stex
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "EXOR",
+    "coin": "HASH",
     "exchange": "BTC",
-    "enabled": [],
-    "cryptopia_id": "",
-    "ccex_key" : "Get-Your-Own-Key",
-    "coinexchange_id": "",
+    "enabled": ["crex"],
     "stex_id": "",
-    "default": ""
+    "default": "crex"
   },
 
   // richlist/top100 settings
@@ -131,27 +128,27 @@
   // low flag: greater than this value flagged yellow
   // high flag: greater than this value flagged red
   "movement": {
-    "min_amount": 100,
-    "low_flag": 1000,
-    "high_flag": 5000
+    "min_amount": 10000,
+    "low_flag": 50000,
+    "high_flag": 1000000
   },
 
   // twitter, facebook, googleplus, bitcointalk, github, slack, discord, telegram, reddit, youtube, website
-  "twitter": "your-twitter-username",
+  "twitter": "hashplatform",
   "facebook": "your-facebook-username",
   "googleplus": "your-google-plus-username",
   "bitcointalk": "your-bitcointalk-topic-value",
-  "github": "your-github-username/your-github-repo",
+  "github": "hashplatform/HASH/releases",
   "slack": "your-full-slack-invite-url",
-  "discord": "your-full-discord-invite-url",
-  "telegram": "your-telegram-group-or-channel-name",
+  "discord": "https://discord.gg/ZXDkGwY",
+  "telegram": "hashplatformofficial",
   "reddit": "your-subreddit-name",
   "youtube": "your-full-youtube-url",
-  "website": "your-full-website-url",
+  "website": "http://62.171.160.137";
 
   //genesis
-  "genesis_tx": "dd1d332ad2d8d8f49195056d482ae3c96fd2d16e9d166413b27ca7f19775644c",
-  "genesis_block": "0000860fcf946b44df0e7d85d6757d45f8de6f4c9aacc5c7b6abc13db1f68819",
+  "genesis_tx": "e42f36769ebc4dbf65fc045e003c885c14e8df0de323c81da1c2ae35069de340",
+  "genesis_block": "000001bf7d704efe6fe7e87cad75e56b7ab10f2f828038dd596f4e22e70e1bda",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,

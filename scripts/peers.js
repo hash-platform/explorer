@@ -2,7 +2,7 @@ var mongoose = require('mongoose')
   , lib = require('../lib/explorer')
   , db = require('../lib/database')
   , settings = require('../lib/settings')
-  , request = require('request');
+  , request = require('postman-request');
 
 var COUNT = 5000; //number of blocks to index
 
@@ -17,7 +17,7 @@ dbString = dbString + '@' + settings.dbsettings.address;
 dbString = dbString + ':' + settings.dbsettings.port;
 dbString = dbString + '/' + settings.dbsettings.database;
 
-mongoose.connect(dbString, { useNewUrlParser: true, useCreateIndex: true }, function(err) {
+mongoose.connect(dbString, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }, function(err) {
   if (err) {
     console.log('Unable to connect to database: %s', dbString);
     console.log('Aborting');

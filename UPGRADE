@@ -1,5 +1,12 @@
 NOTE: All updates require the explorer to be restarted
 
+1.1.0 [ April 5, 2020 ] : first [HASH](https://www.hashplatform.net) release, by [Koen](https://github.com/koen84)
+- HASHify
+- Fix for Server Discovery and Monitoring engine Deprecation Warning
+- Dependency updates & replace deprecated 'request' dependency with 'postman-request'
+- Remove unused code & defunct markets
+- Update README with HASH modifications
+
 1.0.1 [June 7, 2019]
 -Added stex.com market support
 -Added a new public api /ext/getbasicstats
