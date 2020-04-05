@@ -1,7 +1,7 @@
-HASH eIquidus - 1.0.1
+HASH eIquidus - 1.1.0
 =====================
 
-The Exor block explorer.
+The HASH block explorer.
 
 This project is a fork of [eIquidus](https://github.com/team-exor/eiquidus) which is a fork of [Ciquidus Explorer](https://github.com/suprnurd/ciquidus) which is a fork of [Iquidus Explorer](https://github.com/iquidus/explorer).
 
@@ -11,7 +11,7 @@ Special thanks also to the original authors Luke Williams and Alan Rudolf.
 
 ### See it in action
 
--  http://62.171.160.137/
+-  https://https://explorer.hashplatform.net
 
 ### Requires
 
